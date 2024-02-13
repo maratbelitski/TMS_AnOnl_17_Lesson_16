@@ -1,4 +1,4 @@
-package com.example.tms_anonl_17_lesson_15
+package com.example.tms_anonl_17_lesson_16
 
 import android.content.Context
 import android.content.Intent
@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.widget.Button
+import com.example.tms_anonl_17_lesson_15.R
 
 class FourthActivity : AppCompatActivity(), Sleep {
 

@@ -1,10 +1,11 @@
-package com.example.tms_anonl_17_lesson_15
+package com.example.tms_anonl_17_lesson_16
 
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import com.example.tms_anonl_17_lesson_15.R
 
 class FifthActivity : AppCompatActivity() {
     companion object {

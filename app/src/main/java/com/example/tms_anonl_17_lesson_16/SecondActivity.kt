@@ -1,4 +1,4 @@
-package com.example.tms_anonl_17_lesson_15
+package com.example.tms_anonl_17_lesson_16
 
 import android.content.Context
 import android.content.Intent
@@ -7,22 +7,29 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.widget.Button
+import com.example.tms_anonl_17_lesson_15.R
 
-class ThirdActivity : AppCompatActivity(), Sleep {
+class SecondActivity : AppCompatActivity(), Sleep {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_third)
+        setContentView(R.layout.activity_second)
 
-        val buttonFifth: Button = findViewById(R.id.btn_to5)
+        val buttonThird: Button = findViewById(R.id.btn_to3)
+        val buttonFourth: Button = findViewById(R.id.btn_to4)
 
-        buttonFifth.setOnClickListener {
-            sleepAndGo(FifthActivity().launchIntent(this,
-                resources.getString(R.string.from_third)))
+        buttonFourth.setOnClickListener {
+            sleepAndGo(FourthActivity().launchIntent(this))
+        }
+
+        buttonThird.setOnClickListener {
+            sleepAndGo(ThirdActivity().launchIntent(this))
         }
     }
 
+
     fun launchIntent(context: Context): Intent {
-        return Intent(context, ThirdActivity::class.java)
+        return Intent(context, SecondActivity::class.java)
     }
 
     override fun sleepAndGo(intent: Intent) {

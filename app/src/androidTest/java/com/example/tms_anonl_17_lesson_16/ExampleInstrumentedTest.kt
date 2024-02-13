@@ -1,4 +1,4 @@
-package com.example.tms_anonl_17_lesson_15
+package com.example.tms_anonl_17_lesson_16
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
