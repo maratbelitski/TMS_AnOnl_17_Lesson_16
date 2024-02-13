@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.TMS_AnOnl_17_Lesson_15" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+         <item name="colorPrimary">@color/black</item>
     </style>
 
     <style name="Theme.TMS_AnOnl_17_Lesson_15" parent="Base.Theme.TMS_AnOnl_17_Lesson_15" />

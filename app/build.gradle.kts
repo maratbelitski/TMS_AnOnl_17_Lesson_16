@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.tms_anonl_17_lesson_15"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.tms_anonl_17_lesson_15"
         minSdk = 26
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 

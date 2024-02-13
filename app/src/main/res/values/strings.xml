@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">TMS_AnOnl_17_Lesson_15</string>
+    <string name="hello_first_activity">Hello First Activity!</string>
+    <string name="hello_second_activity">Hello Second Activity!</string>
+    <string name="hello_third_activity">Hello Third Activity!</string>
+    <string name="hello_fourth_activity">Hello Fourth Activity!</string>
+    <string name="hello_fifth_activity">Hello Fifth Activity!</string>
+    <string name="go_to_second">go to second</string>
+    <string name="go_to_third">go to third</string>
+    <string name="go_to_fourth">go to fourth</string>
+    <string name="go_to_fifth">go to fifth</string>
+    <string name="from_third">I\'m from Third Activity</string>
+    <string name="from_fourth">I\'m from Fourth Activity</string>
+    <string name="new_message">New message:</string>
 </resources>

@@ -13,7 +13,19 @@
         android:theme="@style/Theme.TMS_AnOnl_17_Lesson_15"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".FifthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FourthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ThirdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FirstActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

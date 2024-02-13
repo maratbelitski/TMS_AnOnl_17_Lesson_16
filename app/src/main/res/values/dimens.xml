@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_text">25sp</dimen>
+    <dimen name="message_text">20sp</dimen>
+    <dimen name="main_padding">8dp</dimen>
+</resources>
