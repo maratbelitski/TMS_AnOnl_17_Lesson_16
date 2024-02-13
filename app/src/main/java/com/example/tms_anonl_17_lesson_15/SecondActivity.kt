@@ -4,6 +4,8 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.widget.Button
 
 class SecondActivity : AppCompatActivity(), Sleep {
@@ -16,13 +18,11 @@ class SecondActivity : AppCompatActivity(), Sleep {
         val buttonFourth: Button = findViewById(R.id.btn_to4)
 
         buttonFourth.setOnClickListener {
-            sleep()
-            startActivity(FourthActivity().launchIntent(this))
+            sleepAndGo(FourthActivity().launchIntent(this))
         }
 
         buttonThird.setOnClickListener {
-            sleep()
-            startActivity(ThirdActivity().launchIntent(this))
+            sleepAndGo(ThirdActivity().launchIntent(this))
         }
     }
 
@@ -31,11 +31,11 @@ class SecondActivity : AppCompatActivity(), Sleep {
         return Intent(context, SecondActivity::class.java)
     }
 
-    override fun sleep() {
-        val thread = Thread {
-            Thread.sleep(3000)
-        }
-        thread.start()
-        thread.join()
+    override fun sleepAndGo(intent: Intent) {
+        val looper = requireNotNull(Looper.myLooper())
+        val handler = Handler(looper)
+        handler.postDelayed({
+            startActivity(intent)
+        }, 3000)
     }
 }
