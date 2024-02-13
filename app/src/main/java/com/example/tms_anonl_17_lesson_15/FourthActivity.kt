@@ -31,6 +31,6 @@ class FourthActivity : AppCompatActivity(), Sleep {
         val handler = Handler(looper)
         handler.postDelayed({
             startActivity(intent)
-        }, 3000)
+        }, Sleep.SLEEP_TIME)
     }
 }

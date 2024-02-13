@@ -8,5 +8,8 @@ import android.content.Intent
  * @project TMS_AnOnl_17_Lesson_15
  */
 interface Sleep {
+    companion object{
+        const val SLEEP_TIME = 3000L
+    }
     fun sleepAndGo(intent: Intent)
 }
