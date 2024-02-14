@@ -9,14 +9,14 @@ import com.example.tms_anonl_17_lesson_15.R
 
 class FifthActivity : AppCompatActivity() {
     companion object {
-        const val WHERE_FROM = "where from"
+        const val WHERE_FROM = "where_from"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fifth)
 
-        val textMessage = findViewById<TextView>(R.id.tv_arrived_message)
+        val textMessage: TextView = findViewById(R.id.tv_arrived_message)
         val message = intent.getStringExtra(WHERE_FROM)
 
         textMessage.text = message
